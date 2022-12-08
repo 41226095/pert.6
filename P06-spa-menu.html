@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="P06-spa-menu.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Salman Abdullah Al Baaqir</title>
+</head>
+<body>
+    <nav class="wrapper">
+      <div class="brand">
+      <div class="firstname">Salman Abdullah </div>
+      <div class="lastname">Al Baaqir</div>
+      </div>
+      <ul class="navigation">
+        <li><a href="" id="navigation1">Profile</a></li>
+        <li><a href="" id="active">Aboutme</a></li>
+        <li><a href="" id="projectnav">project</a></li>
+      </ul>
+    </nav>
+  <div class="conteiner1">
+    <div id="profile" onclick="profile()">
+      <div>
+        <h2>Nama  :<span>Salman Abdullah Al Baaqir</span></h2>
+        <h2>umur :<span>19th</span></h2>
+        <h2>Prodi :<span>Teknik Informatika</span></h2>
+        <h2>Alamat :<span>Tegal Jawa Tengah</span></h2>
+        <h2>Hobi :<span>Ngoding,gyme,olahraga,</span></h2>
+      </div>
+    </div>
+      <div id="profile1">
+      <div class="profile1value">
+        <br>
+        <br>
+        <h2>-<span> Saya Kuliah dikampus STMIK IKMI Cirebon</span></h2>
+        <h2>-<span>Hobi saya ngegym</span></h2>
+        <h2>-<span>bhs.pemrograman yang saya kuasai - Java Script,html</span></h2>
+        <h2>-<span>Cita cita saya adalah ingin menjadi seorang petarung UFC</span></h2>
+      </div>
+    </div>
+      <div id="project">
+      <div class="projectvalue">
+        <a href="https://riofebriyan244.github.io/riowebsite.github.io/rioweb.html"><h2>My Website</h2></a>
+        <a href="https://riofebriyan244.github.io/febriyan244.github.io/febriyan.html"><h2>Photo</h2></a>
+      </div>
+    </div>
+  </div>
+  <script>
+  $(document).ready(function(){
+    $('#navigation1').click(function(){
+      $('#profile').addClass('open')
+      $('#project').removeClass('open')
+      $('#profile1').removeClass('open')
+      return false; 
+    });
+    $('#active').click(function(){
+      $('#profile1').addClass('open');
+      $('#profile').removeClass('open');
+      $('#project').removeClass('open');
+      return false; 
+    });
+    $("#projectnav").click(function(){
+      $('#project').addClass('open')
+      $('#profile1').removeClass('open')
+      $('#profile').removeClass('open')
+      return false; 
+    });
+  });
+  </script>
+  </body>
